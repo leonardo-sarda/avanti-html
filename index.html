@@ -39,13 +39,15 @@
             <div class="flex ">
               <img src="/assets/logo.png" alt="Logo Avanti" class="h-[40px]">
             </div>
-            <div class="flex">
+            <div class="flex flex-col">
               <div class="flex w-[594px] h-[40px] border rounded-[10px] items-center">
-                <input class="w-[594px] px-4 outline-none" type="text" placeholder="Digite aqui o que você procura">
-                <button class="px-4">
+                <input id="searchInput" class="w-[594px] px-4 outline-none" type="text" placeholder="Digite aqui o que você procura">
+                <button class="px-4" onclick="handleSearch()">
                   <img src="./assets/search.png" alt="" class="size-[18.5px]">
                 </button>
               </div>
+              <!-- Mensagem de busca -->
+              <div id="searchResult" class="mt-2 text-sm text-gray-600 hidden"></div>
             </div>
           </div>
           
@@ -489,6 +491,6 @@
           </footer>
     </div>
   </main>
-            
+  <script src="script.js"></script>         
 </body>
-</html> 
+</html>
